@@ -2,6 +2,134 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
+    Layout = "_Layout";
 }
 
+<header>
+    <img src="~/images/codeBackground.png" alt="screen with code" class="hero">
+    <img src="~/images/GDLogo.png" class="logo">
+    @*<ul class="navBar">
+        <li>Skills <strong>|</strong></li>
+        <li> Projects <strong>|</strong></li>
+        <li> Contact</li>
+    </ul>*@
+    <h1 class="title">Gregory Dukes</h1>
+    <p>
+        I am a full-stack C# .NET developer and an Army veteran.  Driven by a passion to understand how things work, I became a developer to solve problems and improve software by coordinating my unique perspective and skills with your mission, vision, and values.
+    </p>
+</header>
 
+<div class="background">
+    <section class="technical">
+        <h1 class="title">Technical Skills</h1>
+        <ul class="container1">
+            <li>
+                <div class="card1">
+                    <div class="card-content">
+                        <h3 class="card-title">Languages</h3>
+                        <p>
+                            <img src="~/images/icons/icons8-c.png" alt="C# icon" style="padding-bottom: 10px;" />
+                            <img src="~/images/icons/html_css_js2.png" />
+                            <img src="~/images/icons/tsql.jpg" alt="t-sql icon" height="50" width="50" style="padding-bottom: 10px;" />
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card2">
+                    <div class="card-content">
+                        <h3 class="card-title">Tools</h3>
+                        <p>
+                            <img src="~/images/icons/vsLogo.png" alt="visual studio logo icon" height="50" width="75" />
+                            <img src="~/images/icons/aspnet.png" alt="asp.net icon" height="50" width="50" />
+                            <img src="~/images/icons/azure-icon-50x50.png" alt="azure logo icon" />
+                            <img src="~/images/icons/DevOps.png" alt="azure dev opd logo icon" />
+                            <br />
+                            <img src="~/images/icons/mssms.jpg" alt="sql management studio icon" height="50" width="50" />
+                            <img src="~/images/icons/SQLCloud.png" alt="SQL server cloud icon" />
+                            <img src="~/images/icons/icons8-nodejs.png" alt="node js icon" />
+                            <img src="~/images/icons/icons8-postgresql.png" alt="postgres icon" />
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card3">
+                    <div class="card-content">
+                        <h3 class="card-title">Skills</h3>
+                        <p class="skills">Agile Work Flow <strong>|</strong> Azure DevOps <strong>|</strong> Pair/Mob Programming <strong>|</strong> Code Review <strong>|</strong> Git Version Control <strong>|</strong> Container Storage <strong>|</strong> Database Administration <strong>|</strong> SQL Stored Procedures <strong>|</strong> SQL Triggers <strong>|</strong> Soft Skills <strong>|</strong> Customer Interaction <strong>|</strong> Rubik's Cube</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <div class="background2">
+        <section class="projects">
+            <h1>Projects</h1>
+            <ul class="container2">
+                <li>
+                    <a href="https://stickerfire20171113054734.azurewebsites.net/" target="_blank">
+                        <div class="card1">
+                            <div class="card-content">
+                                <h3 class="card-title">StickerFire</h3>
+                                <img class="web-img" src="~/images/StickerFire.png">
+                                <p>StickerFire is a project web app I worked on with a team.  The concept is a kickstarter type campaign to sell custom sticker designs.  It was written in C# using Visual Studio and the front end was made responsive using Bootstrap.  The app is hosted on Azure and we are using Azure Blob Container Strorage to handle image storage for each sticker campaign.</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="construction">
+                    <a href="http://www.constructionwhere.info" target="_blank">
+                        <div class="card3">
+                            <div class="card-content">
+                                <h3 class="card-title">Construction Where</h3>
+                                <img class="web-img" src="~/images/ConstructionWhere.png">
+                                <p>Construction Where is a small team-built single page web app.  The concept is to plot the locations of the most recent construction permits pulled in the city of Seattle.  We used the Seattle Open Data API to pull permit information and plotted the points using Google Maps API.  The app is written in JavaScript and the front end is pure HTML/CSS with a mobile first approach. </p>
+
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://casinowar.fun" target="_blank">
+                        <div class="card3">
+                            <div class="card-content">
+                                <h3 class="card-title">Casino War</h3>
+                                <img class="web-img" src="~/images/CasinoWar.png">
+                                <p>Casino War is my first basic web app game based on the popular casino table game.  We used local storage to persist the user name across pages and store the initial bank amount. The app is written in JavaScript with pure HTML/CSS for design.  </p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="bottom">
+                    <div class="card4">
+                        @*<a asp-controller="Resume" asp-action="Resume" target="_blank">*@
+                        <a href="https://docs.google.com/document/d/1aNsiM1gMBB9DK8mY-07tkEsZbtf-wv0ATYR7x65GAeQ/edit?usp=sharing" target="_blank">
+                            <div class="card-content">
+                                <h3 class="card-title">New Project</h3>
+
+                                <p>Project coming Soon</p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+</div>
+    <footer>
+        <p>
+            <a href="mailto:me@gregorydukes.com" target="_blank"><img src="~/images/icons/icons8-letter-grey.png" alt="blue letter icon"></a>
+            <a href="https://www.linkedin.com/in/gregory-dukes/" target="_blank"><img src="~/images/icons/icons8-linkedin.png" alt="linkedin icon"></a>
+            <a href="http://facebook.com/gregory.dukes" target="_blank"><img src="~/images/icons/icons8-facebook.png" alt="facebook icon"></a>
+            <a href="https://twitter.com/Dukes_GregoryD" target="_blank"><img src="~/images/icons/icons8-twitter.png" alt="twitter icon"></a>
+            <a href="https://github.com/Kcils360" target="_blank"><img src="~/images/icons/icons8-github.png"></a>
+            <a href="https://docs.google.com/document/d/1aNsiM1gMBB9DK8mY-07tkEsZbtf-wv0ATYR7x65GAeQ/edit?usp=sharing" target="_blank"><img src="~/images/icons/icons8-resume-50.png"></a>
+        </p>
+        <ul class="contact">
+            <li>(303) 803-6383</li>
+            <li> | </li>
+            <li><a href="mailto:me@gregorydukes.com" target="_blank">me@gregorydukes.com</a></li>
+        </ul>
+        <p>&copy; 2017 Gregory Dukes </p>
+    </footer>
